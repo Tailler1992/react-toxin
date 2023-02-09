@@ -1,0 +1,9 @@
+.logo {
+  display: inline-flex;
+
+  svg {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

@@ -1,10 +1,11 @@
+import Header from './components/Header/Header';
 import './scss/general.scss';
 
 const App = () => {
   return (
-    <div className="App">
-      СТАРТ
-    </div>
+    <>
+      <Header/>
+    </>
   );
 };
 

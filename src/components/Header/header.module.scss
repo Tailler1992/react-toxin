@@ -1,0 +1,21 @@
+.header {
+  background-color: #ffffff;
+  box-shadow: var(--box-shadow);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.buttons{
+  display: flex;
+  column-gap: 20px;
+}

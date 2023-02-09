@@ -1,0 +1,16 @@
+.nav {
+  ul {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+}
+
+.link {
+  color: var(--color-dark-shade-50);
+  transition: var(--transition);
+
+  &:hover, &:focus {
+    color: var(--color-dark-shade-100);
+  }
+}
