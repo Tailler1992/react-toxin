@@ -1,3 +1,24 @@
+.dropBtn {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid var(--color-dark-shade-25);
+  border-radius: 4px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--color-dark-shade-75);
+  cursor: pointer;
+
+  &:hover, &:focus {
+    border: 1px solid var(--color-dark-shade-50);
+  }
+
+  &.open {
+    border-color: var(--color-dark-shade-50);
+    border-radius: 4px 4px 0 0;
+  }
+}
+
+
 .wrapper {
   position: relative;
 }
