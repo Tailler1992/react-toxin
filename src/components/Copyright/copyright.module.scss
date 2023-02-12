@@ -1,0 +1,26 @@
+.copyright {
+  border-top: 1px solid var(--color-dark-shade-10);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+}
+
+.social {
+  display: flex;
+  column-gap: 20px;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+
+    &:hover {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
+  }
+}
+

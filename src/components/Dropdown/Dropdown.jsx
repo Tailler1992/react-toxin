@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import DropdownMenu from './DropdownMenu/DropdownMenu';
+import {MdOutlineExpandMore} from 'react-icons/md';
 import s from './dropdown.module.scss';
 import {createDescription} from './utils';
 
@@ -46,13 +47,16 @@ const Dropdown = () => {
 
   const handleClickClose = () => {
     setIsOpen(!isOpen);
-  }
+  };
 
   return (
     <>
       <h3>Гости</h3>
-      <div className={!isOpen ? `${s.dropBtn}` : `${s.dropBtn} ${s.open}`} onClick={() => setIsOpen(!isOpen)}>
-        {totalGuests > 0 ? createDescription(state) : 'Сколько гостей'}
+      <div
+        className={!isOpen ? `${s.dropBtn}` : `${s.dropBtn} ${s.open}`}
+        onClick={() => setIsOpen(!isOpen)}>
+        <p>{totalGuests > 0 ? createDescription(state) : 'Сколько гостей'}</p>
+        <MdOutlineExpandMore className={s.icon}/>
       </div>
       <div className={s.wrapper}>
         {isOpen &&
