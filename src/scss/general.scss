@@ -26,11 +26,22 @@
   --width-container: 1200px;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: var(--color-dark-shade-75);
+}
+
+#root {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 h1 {
