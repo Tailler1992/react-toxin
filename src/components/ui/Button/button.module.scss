@@ -3,6 +3,7 @@
   justify-content: center;
   padding: 12px 20px;
   color: #ffffff;
+  font-family: Montserrat, sans-serif;
   font-size: 12px;
   font-weight: bold;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -31,4 +32,9 @@
           linear-gradient(#bc9cff, #8ba4f9) border-box;
   border: solid 2px transparent;
   color: #bc9cff;
+}
+
+.long {
+  width: 100%;
+  display: flex;
 }

@@ -18,7 +18,6 @@ const Copyright = () => {
           <Link to={'/'}><SocialFB/></Link>
           <Link to={'/'}><SocialIns/></Link>
         </div>
-
       </Container>
     </div>
   );

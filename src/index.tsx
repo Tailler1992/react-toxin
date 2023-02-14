@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import App from './App';
 import Main from './pages/Main/Main';
+import NotFound from './pages/NotFound/NotFound';
+import SearchRoom from './pages/SearchRoom/SearchRoom';
 
 const router = createBrowserRouter([
   {
@@ -11,10 +13,18 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Main/>
+        element: <Main/>,
+      },
+      {
+        path: 'search-room',
+        element: <SearchRoom/>,
+      },
+      {
+        path: '*',
+        element: <NotFound/>,
       }
-    ]
-  }
+    ],
+  },
 ]);
 
 const root = ReactDOM.createRoot(

@@ -1,0 +1,26 @@
+.btn {
+  position: relative;
+  width: 100%;
+  padding: 14px 20px 15px;
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border: none;
+  border-radius: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  font-size: 24px;
+  transform: translateY(-50%);
+}

@@ -4,15 +4,9 @@ import {MdOutlineExpandMore} from 'react-icons/md';
 import s from './dropdown.module.scss';
 import {createDescription} from './utils';
 
-const initialDropdownItem = [
-  {id: 1, title: 'взрослые', quantity: 0},
-  {id: 2, title: 'дети', quantity: 0},
-  {id: 3, title: 'младенцы', quantity: 0},
-];
-
-const Dropdown = () => {
+const Dropdown = ({className, heading, initialDD}) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [state, setState] = useState(initialDropdownItem);
+  const [state, setState] = useState(initialDD);
 
   const totalGuests = state.reduce((accum, item) => accum + item.quantity, 0);
   const handleClickDec = (index) => {
@@ -50,8 +44,8 @@ const Dropdown = () => {
   };
 
   return (
-    <>
-      <h3>Гости</h3>
+    <div className={`${s.dropdown} ${className}`}>
+      <h3>{heading}</h3>
       <div
         className={!isOpen ? `${s.dropBtn}` : `${s.dropBtn} ${s.open}`}
         onClick={() => setIsOpen(!isOpen)}>
@@ -69,7 +63,7 @@ const Dropdown = () => {
             onClickClose={handleClickClose}
           />}
       </div>
-    </>
+    </div>
   );
 };
 

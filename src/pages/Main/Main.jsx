@@ -6,7 +6,7 @@ import s from './main.module.scss';
 const Main = () => {
   return (
     <main className={s.main}>
-      <Container>
+      <Container className={s.wrapper}>
         <SearchForm/>
         <div className={s.info}>
           <p>Лучшие номера для вашей работы,<br/> отдыха и просто вдохновения</p>
