@@ -1,37 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
-import App from './App';
-import Main from './pages/Main/Main';
-import NotFound from './pages/NotFound/NotFound';
-import SearchRoom from './pages/SearchRoom/SearchRoom';
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App/>,
-    children: [
-      {
-        index: true,
-        element: <Main/>,
-      },
-      {
-        path: 'search-room',
-        element: <SearchRoom/>,
-      },
-      {
-        path: '*',
-        element: <NotFound/>,
-      }
-    ],
-  },
-]);
+import {RouterProvider} from 'react-router-dom';
+import router from './router/router';
+import {store} from './redux/store';
+import {Provider} from 'react-redux';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <Provider store={store}>
+      <RouterProvider router={router}/>
+    </Provider>
   </React.StrictMode>,
 );
