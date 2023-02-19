@@ -1,0 +1,26 @@
+.container {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  column-gap: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background: transparent;
+  opacity: 0.7;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.active {
+  background: #ffffff;
+  border: none;
+}
