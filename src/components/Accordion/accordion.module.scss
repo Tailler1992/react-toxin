@@ -1,0 +1,30 @@
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font: inherit;
+  background-color: #FFFFFF;
+  cursor: pointer;
+
+  &:hover {
+    .icon {
+      color: var(--color-dark-shade-50);
+    }
+  }
+}
+
+.icon{
+  font-size: 24px;
+  color: var(--color-dark-shade-25);
+}
+
+.open {
+  transform: rotate(180deg);
+  color: var(--color-dark-shade-50);
+}
+
+.content{
+  margin-top: 15px;
+}

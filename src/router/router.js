@@ -3,6 +3,7 @@ import App from '../App';
 import Main from '../pages/Main/Main';
 import NotFound from '../pages/NotFound/NotFound';
 import SearchRoom from '../pages/SearchRoom/SearchRoom';
+import Room from "../pages/Room";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: 'search-room',
         element: <SearchRoom/>,
+      },
+      {
+        path: 'room/:id',
+        element: <Room/>,
       },
       {
         path: '*',
