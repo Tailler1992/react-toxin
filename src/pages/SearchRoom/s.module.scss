@@ -1,0 +1,45 @@
+.searchRoom {
+  border-bottom: 1px solid var(--color-dark-shade-25);
+}
+
+.wrapper {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.panel {
+  flex: 0 1 266px;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.board {
+  flex: 1;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+}
+
+.rooms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 20px;
+}
+
+.error {
+  margin: 100px 0 800px;
+  text-align: center;
+  color: var(--color-dark-shade-100);
+}
+
+.pagination {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}

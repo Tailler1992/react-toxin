@@ -1,0 +1,31 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.room {
+  color: var(--color-dark-shade-100);
+  font-weight: 700;
+
+  span {
+    font-size: 19px;
+  }
+
+  i {
+    margin-left: 5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--color-purple);
+    text-transform: uppercase;
+  }
+}
+
+.price {
+  color: var(--color-dark-shade-50);
+
+  span {
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,55 @@
+.like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid var(--color-dark-shade-25);
+  border-radius: 10px;
+  font: inherit;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--color-dark-shade-50);
+
+    svg {
+      path {
+        fill-opacity: 0.5;
+      }
+    }
+
+    p {
+      color: var(--color-dark-shade-50);
+    }
+  }
+
+  p {
+    font-size: 10px;
+    color: var(--color-dark-shade-25);
+  }
+}
+
+.active {
+  border-color: var(--color-purple);
+
+  &:hover {
+    border-color: var(--color-purple);
+
+    p {
+      color: var(--color-purple);
+      font-weight: 700;
+    }
+
+    svg {
+      path {
+        fill-opacity: 1;
+      }
+    }
+  }
+
+  p {
+    color: var(--color-purple);
+  }
+}

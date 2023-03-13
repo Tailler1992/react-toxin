@@ -1,0 +1,71 @@
+.title {
+  margin-bottom: 5px;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 20px;
+  grid-template-areas:
+    "first-h3 second-h3"
+    ". .";
+
+  &:hover, &:focus {
+    .input {
+      border: 1px solid var(--color-dark-shade-50);
+    }
+
+    .icon {
+      color: var(--color-dark-shade-50);
+    }
+  }
+}
+
+.firstTitle {
+  grid-area: first-h3;
+}
+
+.secondTitle {
+  grid-area: second-h3;
+}
+
+.input {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid var(--color-dark-shade-25);
+  border-radius: 4px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--color-dark-shade-75);
+  cursor: pointer;
+
+  &::placeholder {
+    color: var(--color-dark-shade-75)
+  }
+}
+
+.inputContainer {
+  position: relative;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    .inputFull {
+      border: 1px solid var(--color-dark-shade-50);
+    }
+
+    .icon {
+      color: var(--color-dark-shade-50);
+    }
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 19px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: var(--color-dark-shade-25);
+  pointer-events: none;
+}

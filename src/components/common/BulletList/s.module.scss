@@ -1,0 +1,21 @@
+.bulletList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  li {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      top: 7px;
+      left: -20px;
+      content: '';
+      width: 10px;
+      height: 10px;
+      background: var(--color-dark-shade-25);
+      border-radius: 50%;
+    }
+  }
+}
+

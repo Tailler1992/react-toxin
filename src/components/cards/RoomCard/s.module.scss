@@ -1,0 +1,26 @@
+.wrapper {
+  padding: 0;
+  max-width: 270px;
+
+}
+
+.content {
+  padding: 20px;
+}
+
+
+
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  margin-top: 10px;
+  color: var(--color-dark-shade-50);
+  border-top: 1px solid rgba(31, 32, 65, 0.1);
+
+  span {
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,22 @@
+.button {
+  margin: 0 5px;
+  background: #FFFFFF;
+  cursor: pointer;
+
+  &:hover {
+    svg {
+      color: var(--color-dark-shade-50);
+    }
+  }
+
+  svg {
+    font-size: 24px;
+    color: var(--color-purple);
+  }
+}
+
+.disabled {
+  svg {
+    color: var(--color-dark-shade-50);
+  }
+}

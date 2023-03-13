@@ -1,9 +1,6 @@
 import {createBrowserRouter} from 'react-router-dom';
 import App from '../App';
-import Main from '../pages/Main/Main';
-import NotFound from '../pages/NotFound/NotFound';
-import SearchRoom from '../pages/SearchRoom/SearchRoom';
-import Room from "../pages/Room";
+import {Main, NotFound, Registration, Room, SearchRoom, SignIn} from '../pages';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +14,14 @@ const router = createBrowserRouter([
       {
         path: 'search-room',
         element: <SearchRoom/>,
+      },
+      {
+        path: 'sign-in',
+        element: <SignIn/>,
+      },
+      {
+        path: 'registration',
+        element: <Registration/>,
       },
       {
         path: 'room/:id',

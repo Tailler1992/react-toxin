@@ -1,10 +1,9 @@
 import {configureStore} from '@reduxjs/toolkit';
-import searchSlice from './slices/searchSlice';
 import filterSlice from './slices/filterSlice';
-
+import roomsSlice from './slices/roomsSlice';
 export const store = configureStore({
   reducer: {
-    searchSlice,
     filterSlice,
+    roomsSlice
   },
 });

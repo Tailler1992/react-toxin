@@ -1,0 +1,27 @@
+.infoList {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--color-dark-shade-10);
+    }
+  }
+
+  h3 {
+    color: var(--color-dark-shade-75);
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+}

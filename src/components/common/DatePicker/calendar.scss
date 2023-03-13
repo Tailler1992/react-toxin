@@ -1,0 +1,104 @@
+.rmdp-container {
+  .custom-arrow {
+    height: 5px;
+    line-height: 0;
+  }
+
+  .rmdp-border {
+    border: 1px solid var(--color-dark-shade-25);
+  }
+}
+
+.rmdp-container .custom-calendar {
+  width: 316px;
+
+  & .rmdp-top-class {
+    justify-content: center;
+  }
+
+  & .rmdp-header {
+    margin-bottom: 13px;
+  }
+
+  & .rmdp-header-values {
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--color-dark-shade-100);
+  }
+
+  & .rmdp-week-day {
+    height: 40px;
+    width: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--color-purple);
+  }
+
+  & .rmdp-day {
+    height: 40px;
+    width: 40px;
+    font-size: 12px;
+    color: var(--color-dark-shade-50);
+  }
+
+  & .rmdp-day.rmdp-disabled {
+    color: var(--color-dark-shade-25);
+  }
+
+  & .rmdp-today span {
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    font-weight: 700;
+    color: #fff;
+
+    &:hover {
+      background: linear-gradient(180deg, #6FCF97CD 0%, #66D2EACD 100%);
+    }
+  }
+
+  & .custom-selected {
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  }
+
+  & .rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden):not(.rmdp-today) {
+    & span:not(.custom-selected):hover {
+      background: linear-gradient(180deg, #BB9CFF40 0%, #8BA4F940 100%);
+      color: var(--color-dark-shade-50);
+    }
+
+    & span.custom-selected:hover {
+      background: linear-gradient(180deg, #BB9CFFCD 0%, #8BA4F9CD 100%);
+    }
+
+  }
+
+  & .rmdp-day.rmdp-range {
+    background: linear-gradient(180deg, #BB9CFF40 0%, #8BA4F940 100%);
+    box-shadow: none;
+  }
+}
+
+
+.rmdp-container .custom-mini-calendar {
+  width: 266px;
+
+  & .rmdp-header {
+    margin-bottom: 0;
+  }
+
+  & .rmdp-week-day {
+    height: 33px;
+    width: 33px;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--color-purple);
+  }
+
+  & .rmdp-day {
+    height: 33px;
+    width: 33px;
+    font-size: 12px;
+    color: var(--color-dark-shade-50);
+  }
+}
