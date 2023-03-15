@@ -59,7 +59,7 @@ export const Room = () => {
               </div>
               <div>
                 <h2 className={s.chartTitle}>Впечатления от номера</h2>
-                <Chart/>
+                <Chart />
               </div>
             </div>
 

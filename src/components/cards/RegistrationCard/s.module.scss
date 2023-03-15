@@ -1,39 +1,43 @@
 .card {
   max-width: 380px;
   width: 100%;
-  display: grid;
-  gap: 20px;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    margin-bottom: 5px;
+  }
 }
 
-.fullName{
-  input:not(:last-child) {
-    margin-bottom: 10px;
-  }
+.fullName {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .radioButtons {
   display: flex;
   gap: 20px;
+  margin-bottom: 20px;
 }
 
 .dateBirth {
-  h3 {
-    margin-bottom: 5px;
-  }
+  margin-bottom: 20px;
+
+
 }
 
 .login {
-  h3 {
-    margin-bottom: 5px;
-  }
-
-  input:not(:last-child) {
-    margin-bottom: 10px;
-  }
+  display: grid;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .buttonForm {
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .createAccount {

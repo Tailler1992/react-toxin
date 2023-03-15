@@ -15,3 +15,25 @@
   }
 }
 
+.answer {
+  max-width: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    margin: 0;
+
+    &:first-child {
+      color: var(--color-dark-shade-100);
+      font-weight: 700;
+    }
+
+  }
+}
+
+.icon {
+  margin-right: 10px;
+  color: var(--color-purple);
+  font-size: 24px;
+}

@@ -1,18 +1,20 @@
 .card {
   max-width: 380px;
   width: 100%;
-  display: grid;
-  gap: 20px;
-}
 
-.login {
-  input:not(:last-child) {
-    margin-bottom: 10px;
+  h1{
+    margin-bottom: 20px;
   }
 }
 
+.login {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 .buttonForm {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .createAccount {
