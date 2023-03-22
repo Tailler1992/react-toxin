@@ -4,6 +4,7 @@ import s from "./s.module.scss";
 import {DatePicker, Dropdown} from "../../common";
 import {Link} from "react-router-dom";
 import RoomInfo from "../../common/RoomInfo";
+import inclineWord from "../../../utils/inclineWord";
 
 const getNumberOfDays = (start, end) => {
   if (!start || !end) {
@@ -23,6 +24,8 @@ export const BookingCard = ({dates, number, isLuxury, price, guests}) => {
   const priceOfAdditionalServices = 300;
   const total = priceOfDays + priceOfServices + priceOfAdditionalServices;
 
+  const declensionWord = inclineWord(numberOfDays, ['сутки', 'суток', 'суток']);
+
   return (
       <Card className={s.card}>
         <RoomInfo number={number} isLuxury={isLuxury} price={price}/>
@@ -30,7 +33,7 @@ export const BookingCard = ({dates, number, isLuxury, price, guests}) => {
 
         <Dropdown heading={'Гости'} guests={guests}/>
         <div className={s.details}>
-          <div><span>{price}₽ х {numberOfDays} суток</span><span>{priceOfDays}₽</span></div>
+          <div><span>{price}₽ х {numberOfDays} {declensionWord}</span><span>{priceOfDays}₽</span></div>
           <div><span>Сбор за услуги: скидка 2 179₽</span><span>{priceOfServices}₽</span></div>
           <div><span>Сбор за дополнительные услуги</span><span>{priceOfAdditionalServices}₽</span></div>
         </div>

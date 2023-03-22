@@ -3,6 +3,7 @@ import {Slider, Rating} from '../../common';
 import {Card} from "../../ui";
 import s from './s.module.scss';
 import RoomInfo from "../../common/RoomInfo";
+import inclineWord from "../../../utils/inclineWord";
 
 
 export const RoomCard = ({number, photoGallery, isLuxury, price, rating, feedback}) => {
@@ -14,7 +15,7 @@ export const RoomCard = ({number, photoGallery, isLuxury, price, rating, feedbac
             <RoomInfo number={number} isLuxury={isLuxury} price={price}/>
             <div className={s.rating}>
               <div><Rating stars={rating}/></div>
-              <p><span>{feedback}</span> Отзывов</p>
+              <p><span>{feedback}</span> {inclineWord(feedback, ['отзыв',  'отзыва', 'отзывов'])}</p>
             </div>
           </div>
         </Link>

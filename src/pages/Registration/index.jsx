@@ -1,7 +1,6 @@
-import React from 'react';
-import s from './s.module.scss';
 import {Container} from "../../components/ui";
 import {RegistrationCard} from "../../components/cards";
+import s from './s.module.scss';
 
 export const Registration = () => {
   return (

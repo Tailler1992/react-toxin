@@ -9,7 +9,6 @@ export const SignIn = () => {
       <main className={s.main}>
         <Container className={s.wrapper}>
           <SignInCard/>
-
         </Container>
       </main>
   );

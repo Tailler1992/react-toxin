@@ -1,11 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import {useParams} from "react-router";
 import axios from "axios";
 import {BulletList, Chart, InfoList, Review} from "../../components/common";
 import {Container} from "../../components/ui";
-import s from "./s.module.scss";
 import {BookingCard} from "../../components/cards";
 import {useSelector} from "react-redux";
+import inclineWord from "../../utils/inclineWord";
+import s from "./s.module.scss";
 
 
 export const Room = () => {
@@ -16,7 +17,6 @@ export const Room = () => {
 
 
   useEffect(() => {
-
     axios.get('https://63f9eff4897af748dcc5f3ab.mockapi.io/rooms/' + id)
         .then(
             (res) => {
@@ -67,7 +67,7 @@ export const Room = () => {
             <div className={s.reviews}>
               <div className={s.title}>
                 <h2>Отзывы посетителей номера</h2>
-                <p>{reviews.length} отзыва</p>
+                <p>{reviews.length + ' ' + inclineWord(reviews.length, ['отзыв',  'отзыва', 'отзывов'])}</p>
               </div>
               {reviews.map(({avatar, date, description, id, like, name}) =>
                   <Review key={id} avatar={avatar} date={date} description={description} like={like} name={name}/>

@@ -15,27 +15,27 @@ export const Footer = () => {
           <div>
             <h3>навигация</h3>
             <ul>
-              <li><Link to="">О нас</Link></li>
-              <li><Link to="">Новости</Link></li>
-              <li><Link to="">Служба поддержки</Link></li>
-              <li><Link to="">Услуги</Link></li>
+              <li><Link to="about-us">О нас</Link></li>
+              <li><Link to="news">Новости</Link></li>
+              <li><Link to="support-service">Служба поддержки</Link></li>
+              <li><Link to="services">Услуги</Link></li>
             </ul>
           </div>
           <div>
             <h3>о нас</h3>
             <ul>
-              <li><Link to="">О сервисе</Link></li>
-              <li><Link to="">Наша команда</Link></li>
-              <li><Link to="">Вакансии</Link></li>
-              <li><Link to="">Инвесторы</Link></li>
+              <li><Link to="about-service">О сервисе</Link></li>
+              <li><Link to="our-team">Наша команда</Link></li>
+              <li><Link to="job">Вакансии</Link></li>
+              <li><Link to="investors">Инвесторы</Link></li>
             </ul>
           </div>
           <div>
             <h3>Служба поддержки</h3>
             <ul>
-              <li><Link to="">Соглашения</Link></li>
-              <li><Link to="">Сообщества</Link></li>
-              <li><Link to="">Связь с нами</Link></li>
+              <li><Link to="agreements">Соглашения</Link></li>
+              <li><Link to="communities">Сообщества</Link></li>
+              <li><Link to="contact-us">Связь с нами</Link></li>
             </ul>
           </div>
           <div className={s.subscription}>
